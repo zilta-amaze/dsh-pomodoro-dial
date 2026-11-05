@@ -1,0 +1,49 @@
+{
+  "name": "dsh-pomodoro-dial",
+  "version": "1.0.0",
+  "description": "Pomodoro timer for the DeepSeek Harness Web UI: a floating dial with customisable focus / short-break / long-break lengths and five switchable synthesized alarm sounds.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "pomodoro",
+    "timer",
+    "focus"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zilta-amaze/dsh-pomodoro-dial.git"
+  },
+  "homepage": "https://github.com/zilta-amaze/dsh-pomodoro-dial#readme",
+  "bugs": {
+    "url": "https://github.com/zilta-amaze/dsh-pomodoro-dial/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}

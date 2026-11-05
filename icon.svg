@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Pomodoro timer">
+  <circle cx="32" cy="37" r="21" fill="#e2573f"/>
+  <ellipse cx="32" cy="21" rx="10.5" ry="4.4" fill="#3f8f4a"/>
+  <path d="M32 21.5V14.5" stroke="#3f8f4a" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="32" cy="37" r="13" fill="none" stroke="#ffffff" stroke-opacity="0.85" stroke-width="2.4"/>
+  <path d="M32 37V29.8M32 37l5.2 3" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="32" cy="37" r="1.7" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,5 @@
+# Mounts the Pomodoro bundle into this profile. The Host row only carries the
+# inventory entry; the timer runs in the Client half (client.js).
+- insert:
+    - id: dsh-pomodoro-dial
+      name: dsh-pomodoro-dial
